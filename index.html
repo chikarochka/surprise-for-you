@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff0f6">
+    <meta name="description" content="Маленький мир тепла, улыбок и сюрпризов">
+    <title>Love Surprise 💗</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div id="particles" class="particles" aria-hidden="true"></div>
+
+    <header class="header">
+        <a href="#home" class="logo">♡ Love Surprise</a>
+        <button class="music-button" id="musicButton" type="button">
+            ♪ Музыка
+        </button>
+    </header>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-decoration decoration-one">♡</div>
+            <div class="hero-decoration decoration-two">✧</div>
+
+            <div class="hero-content">
+                <div class="eyebrow">
+                    ✨ МАЛЕНЬКИЙ МИР ТЕПЛА ✨
+                </div>
+
+                <h1>Для тебя<br>есть <span>сюрприз</span></h1>
+
+                <p class="hero-text">
+                    Иногда самые маленькие вещи
+                    способны подарить большую улыбку.
+                    Этот уголок создан именно для этого. 💗
+                </p>
+
+                <a class="button primary" href="#greeting">
+                    Открыть сюрприз ↓
+                </a>
+
+                <div class="scroll-note">Листай вниз, здесь кое-что есть ♡</div>
+            </div>
+
+            <div class="hero-art" aria-hidden="true">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="hero-heart">💗</div>
+                <span class="floating-symbol symbol-one">♡</span>
+                <span class="floating-symbol symbol-two">✧</span>
+                <span class="floating-symbol symbol-three">💕</span>
+                <span class="floating-symbol symbol-four">✦</span>
+            </div>
+        </section>
+
+        <section class="section greeting-section" id="greeting">
+            <div class="section-heading">
+                <span class="section-label">01 — ТВОЁ ПРИВЕТСТВИЕ</span>
+                <h2>А теперь познакомимся 💌</h2>
+                <p>Введи своё имя и посмотри, что тебя ждёт.</p>
+            </div>
+
+            <div class="glass-card greeting-card">
+                <div class="card-icon">💌</div>
+
+                <div id="welcome">
+                    <h3>Приветик, незнакомец!</h3>
+                    <p>Как тебя зовут?</p>
+
+                    <form id="nameForm">
+                        <input
+                            id="nameInput"
+                            type="text"
+                            maxlength="40"
+                            placeholder="Напиши своё имя..."
+                            autocomplete="given-name"
+                            aria-label="Твоё имя"
+                        >
+                        <button class="button primary full" type="submit">
+                            Узнать сюрприз 💗
+                        </button>
+                    </form>
+
+                    <p id="error" class="error" role="alert"></p>
+                </div>
+
+                <div id="result" class="hidden" aria-live="polite">
+                    <div class="result-heart">💖</div>
+                    <h3 id="greetingTitle"></h3>
+                    <p id="greetingMessage" class="result-message"></p>
+
+                    <button class="button primary full" id="hugButton" type="button">
+                        Обнять 🫂
+                    </button>
+
+                    <div id="hugMessage" class="note hidden">
+                        Крепко-крепко обнимаю тебя! 🫂💗
+                        Пусть у тебя всегда будет повод улыбаться.
+                    </div>
+
+                    <button class="text-button" id="backButton" type="button">
+                        ← Ввести другое имя
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section compliments-section" id="compliments">
+            <div class="section-heading">
+                <span class="section-label">02 — НЕСКОЛЬКО ТЁПЛЫХ СЛОВ</span>
+                <h2>Ты заслуживаешь улыбки 🌷</h2>
+                <p>Нажми на кнопку — получи маленький комплимент.</p>
+            </div>
+
+            <div class="compliment-box">
+                <div class="compliment-sparkle">✧</div>
+                <div id="complimentIcon" class="compliment-icon">🌸</div>
+                <p id="complimentText">
+                    В этом мире есть место для твоей улыбки.
+                </p>
+                <button class="button light" id="complimentButton" type="button">
+                    Ещё один комплимент ✨
+                </button>
+                <div class="compliment-counter" id="complimentCounter">
+                    Комплимент 1
+                </div>
+            </div>
+
+            <div class="mini-grid">
+                <article class="mini-card">
+                    <span>🌷</span>
+                    <h3>Тепло</h3>
+                    <p>Пусть рядом будут люди, с которыми спокойно и хорошо.</p>
+                </article>
+
+                <article class="mini-card">
+                    <span>⭐</span>
+                    <h3>Мечты</h3>
+                    <p>Пусть у тебя будет больше поводов верить в хорошее.</p>
+                </article>
+
+                <article class="mini-card">
+                    <span>🦋</span>
+                    <h3>Счастье</h3>
+                    <p>Пусть даже обычный день приносит приятные моменты.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section surprise-section" id="surprise">
+            <div class="section-heading">
+                <span class="section-label">03 — СЕКРЕТНАЯ КОМНАТА</span>
+                <h2>Здесь кое-что спрятано 🎁</h2>
+                <p>Ты можешь открыть свой маленький секрет.</p>
+            </div>
+
+            <div class="secret-card">
+                <div id="gift" class="gift" aria-hidden="true">🎁</div>
+                <h3 id="secretTitle">Интересно, что внутри?</h3>
+                <p id="secretText">
+                    Нажми на кнопку, чтобы открыть сюрприз.
+                </p>
+                <button class="button primary" id="secretButton" type="button">
+                    Открыть подарок 🎀
+                </button>
+            </div>
+        </section>
+
+        <section class="section wishes-section" id="wishes">
+            <div class="section-heading">
+                <span class="section-label">04 — ПОЖЕЛАНИЯ</span>
+                <h2>Пусть всё будет хорошо ☁️</h2>
+                <p>Несколько простых пожеланий для тебя.</p>
+            </div>
+
+            <div class="wishes-grid">
+                <div class="wish">
+                    <span>☀️</span>
+                    <p>Побольше солнечных дней</p>
+                </div>
+                <div class="wish">
+                    <span>💌</span>
+                    <p>Приятных сообщений</p>
+                </div>
+                <div class="wish">
+                    <span>🫶🏻</span>
+                    <p>Искренней заботы</p>
+                </div>
+                <div class="wish">
+                    <span>🌙</span>
+                    <p>Спокойных вечеров</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-section">
+            <div class="final-heart">♡</div>
+            <h2>На этом сюрприз не заканчивается</h2>
+            <p>
+                Пусть у тебя сегодня появится хотя бы одна
+                причина улыбнуться. А лучше — целая тысяча. 💗
+            </p>
+            <a class="button light" href="#home">В начало ↑</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="logo">♡ Love Surprise</div>
+        <p>Создано с теплом и заботой 💗</p>
+        <p class="footer-small">Маленький сайт — большие эмоции.</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
